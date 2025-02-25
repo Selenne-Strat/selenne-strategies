@@ -8,8 +8,6 @@ import {
 } from "firebase/auth";
 
 
-const auth = getAuth(app);
-
 const AuthPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
