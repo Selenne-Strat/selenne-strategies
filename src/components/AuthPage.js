@@ -1,4 +1,4 @@
-import React, { useState } from "react";  // ✅ Ensure useState is imported
+import React, { useState } from "react";
 import { auth } from "../firebaseConfig";
 import {
   signInWithPopup,
@@ -7,6 +7,8 @@ import {
   GoogleAuthProvider
 } from "firebase/auth";
 
+
+const auth = getAuth(app);
 
 const AuthPage = () => {
   const [email, setEmail] = useState("");
